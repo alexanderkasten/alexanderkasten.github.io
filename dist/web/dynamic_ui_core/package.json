@@ -1,0 +1,52 @@
+{
+  "name": "@process-engine/dynamic_ui_core",
+  "version": "1.5.0",
+  "description": "Businesslogic of dynamic ui",
+  "main": "dist/commonjs/index.js",
+  "scripts": {
+    "build": "npm run build-tsc && stencil build",
+    "build-tsc": "npm run clean && npm run build-commonjs && npm run build-amd",
+    "build-commonjs": "tsc",
+    "build-amd": "tsc --module amd --outDir ./dist/amd",
+    "clean": "rm -rf dist",
+    "lint": "eslint src/**/*.ts src/*.ts",
+    "lint-fix": "eslint --fix src/**/*.ts src/*.ts",
+    "prepare": "npm run build",
+    "test": ":"
+  },
+  "files": [
+    "dist/**",
+    "ioc_module.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/process-engine/dynamic_ui_core.git"
+  },
+  "author": "Robin Lenz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/process-engine/dynamic_ui_core/issues"
+  },
+  "homepage": "https://github.com/process-engine/dynamic_ui_core#readme",
+  "dependencies": {
+    "@process-engine/consumer_api_client_bundle": "0.2.0",
+    "@process-engine/consumer_api_contracts": "6.0.0",
+    "@process-engine/dynamic_ui_contracts": "1.0.0",
+    "@stencil/core": "^0.18.0",
+    "addict-ioc": "2.5.6",
+    "express": "4.17.1",
+    "handlebars": "4.1.2"
+  },
+  "devDependencies": {
+    "@essential-projects/eslint-config": "^1.0.0",
+    "@types/node": "^10.12.2",
+    "@types/socket.io": "^2.1.2",
+    "eslint": "^5.16.0",
+    "tsconfig": "^7.0.0",
+    "typescript": "^3.4.5"
+  }
+
+,"_resolved": "https://registry.npmjs.org/@process-engine/dynamic_ui_core/-/dynamic_ui_core-1.5.0.tgz"
+,"_integrity": "sha512-9A+TRWj7vkEbESTcmSrP3SiMzLMOccUQeBa22mJIATZ06rnC/lgBQHg4Y0EHgQ0NW3LAv8SUTWDKwkwXXxGniw=="
+,"_from": "@process-engine/dynamic_ui_core@1.5.0"
+}
